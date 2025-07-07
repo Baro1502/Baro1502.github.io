@@ -378,6 +378,75 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="project-card">
+                        <div class="project-preview">
+                            <img loading="lazy" src="assets/projects/diabetes/logo.png" alt="Diabetes">
+                            <h4>Diabetes prediction</h4>
+                            <p class="project-brief">Trained a machine learning model on tabular data to predict diabetes status.</p>
+                            <p class="project-tools">Python, Pandas, XGBoost, Scikit-learn</p>
+                        </div>
+                        <button class="view-details-btn">View Details</button>
+                        <div class="project-details hidden">
+                            <div class="project-info">
+                                <p><strong>Date:</strong>2024</p>
+                            </div>
+                            <p class="project-description">
+                                In this project, we developed a regression-based machine learning pipeline to predict users’ blood sugar levels using questionnaire responses and basic medical measurements, with the goal of supporting early-stage diabetes screening in a non-invasive way.
+
+                                <ul>
+                                    <li><strong>Data Source & Preprocessing:</strong> Collected data from Google Sheets, resolved 198 mismatched diagnostic records, handled missing values (including 294 missing secondary glucose entries), encoded binary (yes/no) and categorical features, and applied <strong>RobustScaler</strong> for normalization.</li>
+                                    <li><strong>Target Transformation:</strong> Due to a left-skewed distribution of glucose values, we applied a log transformation <br><b><i><code>y′ = ln(1 + y)</code></i></b><br> to bring the data closer to a normal distribution and reversed it post-prediction with <br><b><i><code>y = eʸ′ − 1</code></i></b><br></li>
+                                    <li><strong>Handling Imbalanced Data:</strong> Applied <strong>ADASYN</strong> oversampling to balance the training set and address bias toward non-diabetic samples.</li>
+                                    <li><strong>Modeling:</strong> Trained and evaluated multiple regression models including <strong>Linear Regression, Ridge, Lasso, ElasticNet, Decision Tree, Random Forest, Gradient Boosting, AdaBoost, SVR, KNN,</strong> and <strong>MLPRegressor</strong>.</li>
+                                    <li><strong>Hyperparameter Tuning:</strong> Used <strong>RandomizedSearchCV</strong> for efficient tuning of each model's parameters.</li>
+                                    <li><strong>Model Evaluation:</strong> Assessed performance using <strong>MSE, RMSE, MAE,</strong> and <strong>R²</strong> with cross-validation. The best-performing model, <strong>Support Vector Regression (SVR)</strong>, achieved the lowest prediction error (~0.6–0.7 units) and highest R² score across test sets.</li>
+                                </ul>
+
+                                Key features:
+                                <ul>
+                                    <li>Regression model trained on questionnaire data and physiological metrics, enabling predictions without lab tests.</li>
+                                    <li>Achieved ~5% average prediction error, sufficient for early detection thresholds (typically within ±0.5 to 0.8 mmol/L).</li>
+                                    <li>Used tabular ML techniques with explainable pipelines suitable for integration into healthcare tools or screening platforms.</li>
+                                    <li>Incorporated data visualization and exploratory data analysis (EDA) to guide preprocessing and model selection.</li>
+                                </ul>
+                                
+                                <figure class="project-figure two-images">
+                                    <img loading="lazy" src="assets/projects/diabetes/data-skewness.png" alt="data left-skewed">
+                                    <img loading="lazy" src="assets/projects/diabetes/data-after-norm.png" alt="data after normalized">
+                                    <figcaption><b><i><code>y</code></i></b> column real and after normalized step</figcaption>
+                                </figure>
+                                <figure class="project-figure">
+                                    <img loading="lazy" src="assets/projects/diabetes/model-comparision.png" alt="models comparision">
+                                    <figcaption>comparision of models in evaluation phase</figcaption>
+                                </figure>
+
+                                <figure class="project-figure">
+                                    <img loading="lazy" src="assets/projects/diabetes/result.png" alt="Prediction vs Actual Plot">
+                                    <figcaption>Predicted vs. actual blood sugar levels – Regression model output</figcaption>
+                                </figure>
+
+
+                                The pipeline processes responses from a health questionnaire, encodes and scales the input, and feeds it into a trained regression model to output a predicted blood sugar level. The result is used to assess diabetes risk.
+
+                                <ul>
+                                    <li>📋 Collect user input from health questionnaire</li>
+                                    <li>🔢 Encode binary and continuous features</li>
+                                    <li>🧠 Predict blood sugar level via regression</li>
+                                    <li>⚠️ Map to diabetes risk category</li>
+                                </ul>
+                                
+                                Despite limitations such as missing second glucose test data and class imbalance, the system demonstrated reliable performance and interpretability, highlighting its potential as a scalable tool for accessible diabetes screening.
+
+                                This project highlights my skills in tabular data processing, regression modeling, and AI-based health screening using non-invasive input methods.
+                            </p>
+
+                            <div class="project-links">
+                                <!-- <a href="https://play.google.com/store/apps/details?id=com.doctornetwork.doctorassitant&hl=en&pli=1" target="_blank">Android App</a>
+                                <a href="https://apps.apple.com/vn/app/doctor-assistant/id6477260207?l=vi" target="_blank">IOS App</a> -->
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <h3>University projects</h3>
                 <div class="project-grid">
