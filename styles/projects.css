@@ -67,6 +67,20 @@
     margin-top: auto;
 }
 
+.project-figure.two-images {
+    display: flex;
+    gap: 10px; /* spacing between images */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* optional: allows wrap on smaller screens */
+}
+
+.project-figure.two-images img {
+    max-width: 48%;
+    height: auto;
+    border-radius: 8px; /* optional: rounded corners */
+}
+
 .view-details-btn {
     display: block;
     width: 100%;

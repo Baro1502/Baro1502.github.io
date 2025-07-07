@@ -115,27 +115,13 @@
                 </div>
             </div>
 
-<!-- Popup Modal -->
-<div id="project-modal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <div id="modal-project-content"></div>
-    </div>
-</div>
-
-
-                    <!-- <h4>Tasks</h4>
-                    <div class="skills">
-                        <div class="skill-item"><span>Large Language Models:</span> PEFT finetuning, distillation, RAG, Agents</div>
-                        <div class="skill-item"><span>Computer Vision:</span> Image Generation, Image Classification, Segmentation, Object Detection</div>
-                        <div class="skill-item"><span>Data Processing:</span> Data cleaning, Feature extraction, EDA</div>
-                        <div class="skill-item"><span>Tabular ML:</span> Classification, Regression, Clustering, Dimensionality Reduction</div>
-                        <div class="skill-item"><span>Natural Language Processing:</span> Text Classification, Named Entity Recognition, Sentiment Analysis</div>
-                        <div class="skill-item"><span>Speech Processing:</span> Speech Recognition, Text-to-Speech</div>
-                        <div class="skill-item"><span>Time Series:</span> Forecasting, Analysis</div>
-                    </div> -->
-                
-                    <!-- <h4>Frameworks</h4> -->
+            <!-- Popup Modal -->
+            <div id="project-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div id="modal-project-content"></div>
+                </div>
+            </div>
 
 
             <div class="section" id="about">
@@ -230,24 +216,11 @@
 
             </div>
             
-            <!-- <div class="section" id="blog">
-                <h2>Blog</h2>
-                <div class="blog-post">
-                    <h3 class="blog-post-title">
-                        <a href="https://medium.com/@nikhil2362/positional-encoding-explained-a-deep-dive-into-transformer-pe-65cfe8cfe10b" target="_blank">Positional Encoding Explained: A Deep Dive into Transformer PE</a>
-                    </h3>
-                    <div class="blog-post-meta">Published on Medium | Date: July 5, 2024 </div>
-                    <p class="blog-post-excerpt">
-                        In this article, I explore the concept of Positional Encoding in Transformer models.
-                        The intuition behind the absolute positional encoding and RoPE is explored.
-                    </p>
-                </div>
-            </div> -->
 
             <div class="section" id="projects">
                 <h2>Projects</h2>
-
-                <div class="project-grid">
+                <h3>Real hand-on projects</h3>
+                <div class="project-grid" id="imageOverlay">
 
                     <div class="project-card">
                         <div class="project-preview">
@@ -279,15 +252,15 @@
                                     <li>Provides accurate and contextual medical support, including document summarization and symptom interpretation.</li>
                                 </ul>
                                 <figure class="project-figure">
-                                    <img loading="lazy" src="assets/projects/doctor-assistant/diagrams.webp" alt="Doctor Assistant Diagrams">
+                                    <img class="zoom-cursor" loading="lazy" src="assets/projects/doctor-assistant/diagrams.webp" alt="Doctor Assistant Diagrams">
                                     <figcaption>Chatbot diagrams</figcaption>
                                 </figure>
                                 <figure class="project-figure">
-                                    <img loading="lazy" src="assets/projects/doctor-assistant/inapp.png" alt="Doctor Assistant App Screenshot - In-app interface with multimodal input support">
+                                    <img class="zoom-cursor" loading="lazy" src="assets/projects/doctor-assistant/inapp.png" alt="Doctor Assistant App Screenshot - In-app interface with multimodal input support">
                                     <figcaption>In-app interface with multimodal input support</figcaption>
                                 </figure>
                                 <figure class="project-figure">
-                                    <img loading="lazy" src="assets/projects/doctor-assistant/inapp-history.png" alt="Doctor Assistant App Screenshot - In-app chat history and dialogs">
+                                    <img class="zoom-cursor" loading="lazy" src="assets/projects/doctor-assistant/inapp-history.png" alt="Doctor Assistant App Screenshot - In-app chat history and dialogs">
                                     <figcaption>In-app chat history and dialogs</figcaption>
                                 </figure>
                                 This project highlights our expertise in LLMs, LangChain agents, and vector-based retrieval while addressing real-world needs in digital healthcare through multimodal interaction and AI.
@@ -299,60 +272,184 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="project-card">
+                        <div class="project-preview">
+                            <img loading="lazy" src="assets/projects/spaceone/logo.webp" alt="Spaceone - Big data multimodal summarization and sentiment analysis">
+                            <h4>Spaceone - Big data multimodal summarization and sentiment analysis</h4>
+                            <p class="project-brief">Utilizing LLM from services with multimodal approach to summarize videos. Sentiment analysis applied on posts comments</p>
+                            <p class="project-tools">Python, Kafka, OpenAI, GCP, AWS, NodeJs, Transformer</p>
+                        </div>
+                        <button class="view-details-btn">View Details</button>
+                        <div class="project-details hidden">
+                            <div class="project-info">
+                                <p><strong>Date:</strong>2024</p>
+                            </div>
+                            <p class="project-description">
+                                <strong>Spaceone</strong> has a multimodal big data pipeline that performs video content summarization and social sentiment analysis at scale. It uses language models, streaming architectures, and fine-tuned NLP techniques to extract insights from both visual/audio and textual data.
+
+                                <ul>
+                                    <li><strong>Video Summarization Pipeline:</strong> Built an end-to-end multimodal summarizer for videos. First, <strong>Spleeter</strong> was used to extract clean vocal audio, which was converted into text using a fine-tuned speech-to-text model. This textual content was then passed to <strong>OpenAI’s LLM</strong> with structured output prompts to generate concise, context-aware summaries.</li>
+                                    <li><strong>Sentiment Analysis Module:</strong> Fine-tuned <strong>PhoBERT</strong> weights on domain-specific data (Vietnamese social media posts and comments) to classify sentiment (positive, neutral, negative) with greater contextual accuracy.</li>
+                                </ul>
+
+                                Key features:
+                                <ul>
+                                    <li>Multimodal summarization pipeline combining audio preprocessing, ASR, and LLM-driven summarization.</li>
+                                    <li>Fine-tuned transformer-based Vietnamese sentiment classifier for social listening.</li>
+                                    <li>Integrated with <strong>Kafka</strong> for scalable message passing and real-time processing of streaming content.</li>
+                                    <li>Deployed using a hybrid cloud infrastructure across <strong>GCP</strong> and <strong>AWS</strong> services.</li>
+                                    <li>Supports structured summarization output for easier downstream processing and analytics.</li>
+                                </ul>
+                                <figure class="project-figure">
+                                    <img loading="lazy" src="assets/projects/spaceone/comments.png" alt="Spaceone comments statistic chart">
+                                    <figcaption>Spaceone comments statistic chart</figcaption>
+                                </figure>                                <figure class="project-figure">
+                                    <img loading="lazy" src="assets/projects/spaceone/summary.png" alt="Video summary">
+                                    <figcaption>Video summary example</figcaption>
+                                </figure>
+                                <p><strong>What I learned:</strong> This project sharpened my skills in applying large language models to real-world multimodal workflows, fine-tuning pretrained transformers like PhoBERT, and orchestrating streaming data pipelines using Kafka and cloud infrastructure.</p>
+                            </p>
+
+
+
+                            <div class="project-links">
+                                <a href="https://spaceone.vn/" target="_blank">Home page</a>
+                                <!-- <a href="https://apps.apple.com/vn/app/doctor-assistant/id6477260207?l=vi" target="_blank">IOS App</a> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-preview">
+                            <img loading="lazy" src="assets/projects/spooface/logo.webp" alt="Spooface - Face ID with Spoofing detection">
+                            <h4>Spooface - Face ID with Spoofing detection</h4>
+                            <p class="project-brief">Finetuned YOLOv8 model with an ability to detect spoofing image for checking in, faceid</p>
+                            <p class="project-tools">Python, Ultralytics, YOLOv8, OpenCV, DeepFace, Face recognition, Pandas</p>
+                        </div>
+                        <button class="view-details-btn">View Details</button>
+                        <div class="project-details hidden">
+                            <div class="project-info">
+                                <p><strong>Date:</strong>2024</p>
+                            </div>
+                            <p class="project-description">
+                                In this project, we built a spoofing-aware Face ID system—<strong>Spooface</strong>—capable of verifying real human presence in front of a camera and detecting presentation attacks like photos, screens, and deepfakes during face recognition.
+
+                                <ul>
+                                    <li><strong>Finetuned YOLOv8 Model:</strong> Leveraged and retrained <strong>Ultralytics YOLOv8</strong> on a curated spoofing dataset to distinguish between real and spoofed facial inputs.</li>
+                                    <li><strong>Spoof Detection Pipeline:</strong> Combined <strong>OpenCV</strong> pre-processing with a multi-step pipeline for live face capture, liveness check, and spoof classification.</li>
+                                    <li><strong>Face Recognition Integration:</strong> Integrated <strong>DeepFace</strong> and <strong>face_recognition</strong> libraries to cross-check identity only after passing spoof detection.</li>
+                                </ul>
+
+                                Key features:
+                                <ul>
+                                    <li>Real-time liveness detection to prevent image/video-based spoofing during Face ID authentication.</li>
+                                    <li>Custom-trained YOLOv8 model to detect spoofing patterns across multiple environments.</li>
+                                    <li>Robust face verification using DeepFace and traditional embedding-based methods.</li>
+                                    <li>Lightweight deployment-ready code using Python and OpenCV for edge or kiosk-based check-in systems.</li>
+                                    <li>Modular pipeline allowing plug-and-play with other biometric modalities or login systems.</li>
+                                </ul>
+
+                                <figure class="project-figure">
+                                    <img loading="lazy" src="assets/projects/spooface/both-spoofing.png" alt="Spooface sample detection - real vs spoof">
+                                    <figcaption>Real vs. Spoof detection using custom YOLOv8</figcaption>
+                                </figure>
+                                <figure class="project-figure">
+                                    <img loading="lazy" src="assets/projects/spooface/real-spoofing.png" alt="Spooface sample detection - real vs spoof">
+                                    <figcaption>In case of only real one detected</figcaption>
+                                </figure>
+                                The system captures a live frame from the webcam, detects a face using YOLOv8, checks for spoofing features like screen glare or flatness, and only allows identity verification if the input passes the spoofing check.
+
+                                <ul>
+                                    <li>📷 Capture face via webcam</li>
+                                    <li>🧠 YOLOv8 detects and classifies real vs spoof</li>
+                                    <li>🔍 If real, DeepFace performs identity match</li>
+                                    <li>🚫 If spoof, access is denied</li>
+                                </ul>
+
+
+                                This project showcases our capabilities in model finetuning, face authentication, and AI-driven fraud detection using computer vision.
+                            </p>
+
+
+                            <div class="project-links">
+                                <!-- <a href="https://play.google.com/store/apps/details?id=com.doctornetwork.doctorassitant&hl=en&pli=1" target="_blank">Android App</a>
+                                <a href="https://apps.apple.com/vn/app/doctor-assistant/id6477260207?l=vi" target="_blank">IOS App</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3>University projects</h3>
+                <div class="project-grid">
+
+                    <div class="project-card">
+                        <div class="project-preview">
+                            <img loading="lazy" src="assets/projects/traffix/logo.png" alt="Traffix - new approach for google map with public camera">
+                            <h4>Traffix - new approach for google map with public camera</h4>
+                            <p class="project-brief">Built a traffic-aware navigation app using public camera feeds and computer vision. Detected and weighted vehicles via a fine-tuned YOLOv8 model, and used A* pathfinding with real-time visual traffic estimation from city cameras instead of GPS.</p>
+                            <p class="project-tools">Python, Ultralytics YOLOv8, React Native, OpenCV, Google Maps API</p>
+                        </div>
+                        <button class="view-details-btn">View Details</button>
+                        <div class="project-details hidden">
+                            <div class="project-info">
+                                <p><strong>Date:</strong> 2024 - 2025</p>
+                            </div>
+                           <p class="project-description">
+                                In this project, we developed <strong>Traffix</strong>, a mobile traffic navigation system that replaces traditional GPS-based routing with real-time visual traffic analysis using public surveillance cameras and computer vision. The goal is to provide more accurate, context-aware routing in congested urban environments using AI.
+
+                                <ul>
+                                    <li><strong>Live Camera Integration:</strong> Accessed Vietnamese public traffic camera API to crawl live image feeds across a city district.</li>
+                                    <li><strong>Custom YOLOv8 Model:</strong> Labeled and fine-tuned a <strong>YOLOv8</strong> object detection model to count vehicles by type (motorbike, car, bus) in camera snapshots.</li>
+                                    <li><strong>A* Pathfinding with Congestion Heuristic:</strong> Built a custom graph where each node represents a public camera. Used A* algorithm with a heuristic weighted by distance and vehicle density (e.g., bus = 6x motorbike).</li>
+                                    <li><strong>React Native Frontend:</strong> Created a cross-platform mobile app using <strong>React Native</strong> to display optimal routes and live camera images to users.</li>
+                                    <li><strong>Python Backend with Google Maps API:</strong> Implemented a Python API for inference, pathfinding, and integration with <strong>Google Maps</strong> for camera geolocation and visual routing.</li>
+                                </ul>
+
+                                Key features:
+                                <ul>
+                                    <li>Visual real-time traffic analysis using public camera feeds.</li>
+                                    <li>AI-powered detection of vehicle types and density via YOLOv8.</li>
+                                    <li>Pathfinding system with live congestion heuristics using A*.</li>
+                                    <li>Map-based route suggestions augmented with live camera previews.</li>
+                                    <li>Focused deployment in a single city district for efficient performance and testing.</li>
+                                </ul>
+
+                                <figure class="project-figure">
+                                    <img loading="lazy" src="assets/projects/traffix/confusion-matrix.png" alt="Model confusion matrix">
+                                    <figcaption>Model confusion matrix</figcaption>
+                                </figure>
+                                <figure class="project-figure">
+                                    <img loading="lazy" src="assets/projects/traffix/PC-curve.png" alt="Model evaluation result PC curve">
+                                    <img loading="lazy" src="assets/projects/traffix/RC-curve.png" alt="Model evaluation result RC curve">
+                                    <img loading="lazy" src="assets/projects/traffix/PR-curve.jpeg" alt="Model evaluation result PR curve">
+                                    <figcaption>Model evaluation result</figcaption>
+                                </figure>
+                                <figure class="project-figure two-images">
+                                    <img loading="lazy" src="assets/projects/traffix/detection-batch1.jpg" alt="Vehicle detection using YOLOv8">
+                                    <img loading="lazy" src="assets/projects/traffix/detection-batch2.jpg" alt="Vehicle detection using YOLOv8">
+                                    <figcaption>Vehicle detection from public camera snapshots using YOLOv8</figcaption>
+                                </figure>
+                                <figure class="project-figure two-images">
+                                    <img loading="lazy" src="assets/projects/traffix/defaulti-inapp.jpg" alt="Traffix App Screenshot">
+                                    <img loading="lazy" src="assets/projects/traffix/route.jpg" alt="Traffix App Route">
+                                    <figcaption>Mobile interface showing route and live camera feeds</figcaption>
+                                </figure>
+
+                                This project demonstrates our expertise in applied computer vision, route optimization, and integrating public data sources to solve real-world urban mobility challenges.
+                            </p>
+
+                            <div class="project-links">
+                                <!-- <a href="https://play.google.com/store/apps/details?id=com.doctornetwork.doctorassitant&hl=en&pli=1" target="_blank">Android App</a>
+                                <a href="https://apps.apple.com/vn/app/doctor-assistant/id6477260207?l=vi" target="_blank">IOS App</a> -->
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
     
             </div>
 
-
-        
-            <!-- <div class="section" id="publications">
-                <h2>Publications</h2>
-                <div class="pub">
-                    <div class="pub-title"><a href="https://doi.org/10.1016/j.dsp.2024.104407" target="_blank">An analysis of data leakage and generalizability in MRI based classification of Parkinson's Disease using explainable 2D Convolutional Neural Networks</a></div>
-                    <div class="pub-venue">Digital Signal Processing, Volume 147, 2024</div>
-                    <div class="pub-authors">Iswarya Kannoth Veetil, Divi Eswar Chowdary, Nikhil Chowdary P., V. Sowmya, E.A. Gopalakrishnan</div>
-                </div>
-    
-                <div class="pub">
-                    <div class="pub-title"><a href="https://arxiv.org/abs/2309.09336" target="_blank">Unleashing the Power of Dynamic Mode Decomposition and Deep Learning for Rainfall Prediction in North-East India</a></div>
-                    <div class="pub-venue">International Conference on Computation of Artificial Intelligence & Machine Learning. ICCAIML 2024​. Communications in Computer and Information Science</div>
-                    <div class="pub-authors">Paleti Nikhil Chowdary, Sathvika P, Pranav U, Rohan S, Sowmya V, Gopalakrishnan E A, Dhanya M</div>
-                </div>
-    
-                <div class="pub">
-                    <div class="pub-title"><a href="https://aclanthology.org/2023.dravidianlangtech-1.5" target="_blank">Improving Reinforcement Learning Agent Training using Text based Guidance: A study using Commands in Dravidian Languages</a></div>
-                    <div class="pub-venue">Proceedings of the Third Workshop on Speech and Language Technologies for Dravidian Languages, pages 33–42, Varna, Bulgaria. INCOMA Ltd., Shoumen, Bulgaria</div>
-                    <div class="pub-authors">Tran Nguyen Duy Bao, Sai Aravind Vadlapudi, Sai Aashish Menta, Sai Akshay Menta, Vishnu Vardhan Gorantla V N S L, Janakiram Chandu, Soman K P, and Sachin Kumar S.</div>
-                </div>
-    
-                <div class="pub">
-                    <div class="pub-title"><a href="https://doi.org/10.1109/ICCCNT56998.2023.10308067" target="_blank">A Few-Shot Approach to Dysarthric Speech Intelligibility Level Classification Using Transformers</a></div>
-                    <div class="pub-venue">2023 14th International Conference on Computing Communication and Networking Technologies (ICCCNT), Delhi, India, pp. 1-6</div>
-                    <div class="pub-authors">Nikhil Chowdary P., M. S. Akshay, V. S. Aravind, M. S. Aashish, G. V. N. S. L. V. Vardhan and G. Jyothish Lal.</div>
-                </div>
-    
-                <div class="pub">
-                    <div class="pub-title"><a href="https://doi.org/10.2991/978-94-6463-314-6_27" target="_blank">Enhancing Knee Osteoarthritis severity level classification using diffusion augmented images</a></div>
-                    <div class="pub-venue">Proceedings of the International e-Conference on Advances in Computer Engineering and Communication Systems (ICACECS 2023), pp. 266-274</div>
-                    <div class="pub-authors">Nikhil Chowdary P., Gorantla V. N. S. L. Vishnu Vardhan, Menta Sai Akshay, Menta Sai Aashish, Vadlapudi Sai Aravind, Garapati Venkata Krishna Rayalu, P. Aswathy</div>
-                </div>
-    
-                <div class="pub">
-                    <div class="pub-title"><a href="https://doi.org/10.1007/978-981-99-3315-0_63" target="_blank">Face Mask Detection Using Transfer Learning and TensorRT Optimization</a></div>
-                    <div class="pub-venue">International Conference on Innovative Computing and Communications. ICICC 2023. Lecture Notes in Networks and Systems, vol 703</div>
-                    <div class="pub-authors">Nikhil Chowdary P., Pranav Unnikrishnan, Rohan Sanjeev, KSR Logesh, Neethu Mohan & K. P. Soman</div>
-                </div>
-    
-                <div class="google-scholar-section">
-                    <h2>More Publications</h2>
-                    <p>For a complete list of publications and up-to-date metrics, please visit my Google Scholar profile:</p>
-                    <a href="https://scholar.google.co.uk/citations?user=RuldEOQAAAAJ&hl=en" target="_blank" class="google-scholar-link">
-                        <img src="https://scholar.google.com/favicon.ico" alt="Google Scholar Icon" class="google-scholar-icon">
-                        View on Google Scholar
-                    </a>
-                </div>
-            </div> -->
 
             <div class="section" id="timeline">
                 <h2>Timeline</h2>
