@@ -140,12 +140,23 @@
 
             <div class="section" id="about">
                 <h2>About</h2>
-                <p>👋 Hi, I'm <strong>Tran Nguyen Duy Bao</strong>, an <strong>AI and ML Engineer</strong> 🤖🔬 with a passion for <strong>Machine Learning</strong>, <strong>Data Science</strong>, and <strong>Large Language Models (LLMs)</strong>.</p>               
-                 <!-- <br> 
-                    🎓 Currently pursuing my <strong>Master's in Data Science at UC San Diego</strong>, I am dedicated to pushing the boundaries of AI innovation.               -->
-                    <br> <br> 
-                🚀 Welcome to my portfolio!</p> 
+                <p>
+                    👋🏼 Hi, I'm <strong>Tran Nguyen Duy Bao</strong>, an <strong>AI / Machine Learning Engineer</strong> based in Vietnam 🇻🇳. 
+                    I completed my undergraduate degree in <strong>Computer Science</strong> at <strong>Ton Duc Thang University</strong>. 
+                </p>
+
+                <p>
+                    I’m passionate about everything related to <strong>Artificial Intelligence</strong> — from <strong>Natural Language Processing (NLP)</strong> to <strong>Computer Vision</strong>. I’m also experienced with <strong>big data technologies</strong> through academic projects and coursework, including tools like <strong>Apache Spark</strong> and <strong>Kafka</strong> — and I love exploring all corners of the AI world. 🚀
+                </p>
+                
+                <p>
+                    Whether it's building smart systems, experimenting with LLMs, or solving real-world problems with deep learning, I'm always excited to learn and grow with the technology.
+                </p>
+                
+                <p>Welcome to my portfolio!</p>
+
                 <h2>SKILLS</h2>
+
 
                 <div class="skills-container">
                     <div class="tab-buttons">
@@ -233,199 +244,63 @@
                 </div>
             </div> -->
 
-            <!-- <div class="section" id="projects">
+            <div class="section" id="projects">
                 <h2>Projects</h2>
 
-                <h3>Undergraduate Projects</h3>
                 <div class="project-grid">
 
                     <div class="project-card">
                         <div class="project-preview">
-                            <img loading="lazy" data-src="assets/projects/Ai-sales.png" alt="Real Time AI Sales Management">
-                            <h4>Real Time AI Sales Management</h4>
-                            <p class="project-brief">Developed a real-time sales management system with data streaming, analysis, and recommendation engine</p>
-                            <p class="project-tools">MQTT, Kafka, Spark, MongoDB, Python, Deep Learning, Recommendation Systems</p>
+                            <img loading="lazy" src="assets/projects/doctor-assistant/logo.webp" alt="Doctor assistant - Chatbot with AI Agent">
+                            <h4>Doctor assistant - Chatbot with AI Agent</h4>
+                            <p class="project-brief">Developed an AI agent based chatbot with multimodals, rag with vector database</p>
+                            <p class="project-tools">Python, LLM, OpenAI, Azure, GCP, OCR, RAG, Vector DB, Pinecone, Langchain, vLLM, Ollama, PyPDF</p>
                         </div>
                         <button class="view-details-btn">View Details</button>
                         <div class="project-details hidden">
                             <div class="project-info">
-                                <p><strong>Semester</strong> 5</p>
-                                <p><strong>Team size:</strong> 3</p>
-                                <p><strong>Date:</strong> 2023</p>
-                                <p><strong>Course:</strong> 21AIE304 Big Data and Management Systems</p>
+                                <p><strong>Date:</strong> 2024 - 2025</p>
                             </div>
                             <p class="project-description">
-                                In this comprehensive project, we developed a real-time sales management system with three main components:
+                                In this project, we developed an AI-powered Doctor Assistant application designed to support real-time, intelligent interaction through natural language and multimodal inputs. The assistant leverages state-of-the-art language models and retrieval techniques to provide medical insights and contextual assistance.
+                                
                                 <ul>
-                                    <li><strong>Real-Time Data Streaming:</strong> Implemented a system to stream shopping invoices from client to database using MQTT, Kafka, and Spark.</li>
-                                    <li><strong>Data Analysis (EDA):</strong> Performed exploratory data analysis on the collected data using Spark, gaining insights such as top customers, total sales, and busiest days.</li>
-                                    <li><strong>Recommendation System:</strong> Developed a product recommendation system using Alternating Least Squares (ALS) algorithm to provide personalized suggestions to customers.</li>
+                                    <li><strong>Conversational AI Agent:</strong> Built with <strong>LangChain</strong> to manage multi-turn conversations, memory, and tool execution for dynamic query handling.</li>
+                                    <li><strong>Semantic Search with Pinecone:</strong> Integrated <strong>Pinecone</strong> vector database to perform fast, accurate semantic retrieval from medical documents, PDFs, and patient records.</li>
+                                    <li><strong>Multimodal Support:</strong> Enabled the assistant to analyze images (e.g., X-rays, skin conditions), PDFs, and text files to enhance context-aware responses.</li>
                                 </ul>
+
                                 Key features:
                                 <ul>
-                                    <li>Used MobileNetSSD for object detection in the checkout process</li>
-                                    <li>Implemented data streaming architecture with MQTT Broker, Kafka, and Spark Streaming</li>
-                                    <li>Stored data in MongoDB Atlas for efficient retrieval and analysis</li>
-                                    <li>Conducted various analytical queries to extract meaningful insights from the sales data</li>
-                                    <li>Preprocessed data and built an ALS model for the recommendation system</li>
+                                    <li>Supports natural conversations powered by large language models (LLMs).</li>
+                                    <li>Processes and understands uploaded images, PDFs, and text documents.</li>
+                                    <li>Performs real-time document embedding and semantic search with Pinecone.</li>
+                                    <li>Uses LangChain's agent architecture for flexible tool integration and retrieval-augmented generation (RAG).</li>
+                                    <li>Provides accurate and contextual medical support, including document summarization and symptom interpretation.</li>
                                 </ul>
-                                This project demonstrated our ability to work with big data technologies and apply machine learning in a real-world retail scenario.
+                                <figure class="project-figure">
+                                    <img loading="lazy" src="assets/projects/doctor-assistant/diagrams.webp" alt="Doctor Assistant Diagrams">
+                                    <figcaption>Chatbot diagrams</figcaption>
+                                </figure>
+                                <figure class="project-figure">
+                                    <img loading="lazy" src="assets/projects/doctor-assistant/inapp.png" alt="Doctor Assistant App Screenshot - In-app interface with multimodal input support">
+                                    <figcaption>In-app interface with multimodal input support</figcaption>
+                                </figure>
+                                <figure class="project-figure">
+                                    <img loading="lazy" src="assets/projects/doctor-assistant/inapp-history.png" alt="Doctor Assistant App Screenshot - In-app chat history and dialogs">
+                                    <figcaption>In-app chat history and dialogs</figcaption>
+                                </figure>
+                                This project highlights our expertise in LLMs, LangChain agents, and vector-based retrieval while addressing real-world needs in digital healthcare through multimodal interaction and AI.
                             </p>
-                            <div class="project-links">
-                                <a href="https://github.com/Baro1502/AI-Powered-Real-time-Sales-and-Recommendations/tree/main" target="_blank">Code</a>
-                                <a href="https://github.com/Baro1502/AI-Powered-Real-time-Sales-and-Recommendations/blob/main/BDA-ENDSEM.pdf" target="_blank">Presentation</a>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="project-card">
-                        <div class="project-preview">
-                            <img loading="lazy" data-src="assets/projects/rosbot.jpg" alt="Rosbot">
-                            <h4>RosBot</h4>
-                            <p class="project-brief">Self-driven autonomous differential drive robot using ROS and deep learning for object detection and avoidance</p>
-                            <p class="project-tools">Arduino, C++, ROS, Python, OpenCV, TensorRT</p>
-                        </div>
-                        <button class="view-details-btn">View Details</button>
-                        <div class="project-details hidden">
-                            <div class="project-info">
-                                <p><strong>Semester:</strong> 4</p>
-                                <p><strong>Team size:</strong> 2</p>
-                                <p><strong>Date:</strong> Jan 2022</p>
-                                <p><strong>Grade:</strong> A+ </p>
-                            </div>
-                            <p class="project-description">
-                                In this project, we developed an autonomous differential drive robot:
-                                <ul>
-                                    <li>Built a robot with Arduino Uno, L298N Motor Driver, DC Motors, and Nvidia Jetson Nano.</li>
-                                    <li>Implemented differential drive control for flexible movement and turning.</li>
-                                    <li>Utilized ROS (Robot Operating System) for overall robot control and communication.</li>
-                                    <li>Integrated a deep neural network (ResNet18) optimized with TensorRT for object detection.</li>
-                                    <li>Implemented object avoidance logic using OpenCV and the neural network outputs.</li>
-                                </ul>
-                                This project combined hardware assembly, low-level motor control, and high-level AI-driven decision making to create a fully autonomous robot capable of navigating and avoiding obstacles.
-                            </p>
                             <div class="project-links">
-                                <a href="https://github.com/Baro1502/rosbot" target="_blank">Code</a>
-                                <a href="https://www.youtube.com/watch?v=5uNJ9tkyM3k" target="_blank">Video</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-preview">
-                            <img loading="lazy" data-src="assets/projects/RPCA.png" alt="Robust Principal Component Analysis">
-                            <h4>Principal Component Pursuit By Alternating Directions</h4>
-                            <p class="project-brief">Implemented Robust PCA using Alternating Direction Method and applied it to denoise the Yale face dataset</p>
-                            <p class="project-tools">MATLAB, Python</p>
-                        </div>
-                        <button class="view-details-btn">View Details</button>
-                        <div class="project-details hidden">
-                            <div class="project-info">
-                                <p><strong>Semester:</strong> 4</p>
-                                <p><strong>Team size:</strong> 4</p>
-                                <p><strong>Date:</strong> July 2022</p>
-                                <p><strong>Grade:</strong> A+</p>
-                            </div>
-                            <p class="project-description">
-                                In this project, we explored the limitations of traditional Principal Component Analysis (PCA) and implemented Robust Principal Component Analysis (RPCA) to overcome these limitations:
-                                <ul>
-                                    <li><strong>PCA Limitations:</strong> Demonstrated how standard PCA is not robust to outliers, affecting its performance in real-world scenarios with noisy data.</li>
-                                    <li><strong>RPCA Implementation:</strong> Implemented RPCA by framing it as an Alternating Direction Method (ADM) problem, providing a more robust approach to dimensionality reduction.</li>
-                                    <li><strong>Yale Face Dataset Application:</strong> Applied our RPCA implementation to the Yale face dataset, showcasing its effectiveness in image processing tasks.</li>
-                                    <li><strong>Noise Introduction and Denoising:</strong> Introduced various types of noise to the dataset, including:
-                                        <ul>
-                                            <li>Random patches</li>
-                                            <li>Salt and pepper noise</li>
-                                            <li>Other artificial distortions</li>
-                                        </ul>
-                                    </li>
-                                    <li><strong>Comparative Analysis:</strong> Demonstrated the superior performance of RPCA in denoising these corrupted images compared to traditional PCA.</li>
-                                    <li><strong>Mathematical Foundation:</strong> Derived and implemented the mathematical foundations of RPCA and the Alternating Direction Method.</li>
-                                </ul>
-                                This project deepened our understanding of robust dimensionality reduction techniques and their practical applications in image processing and denoising. It showcased the power of RPCA in handling real-world data with outliers and corruption, providing valuable insights into advanced data analysis methods.
-                            </p>
-                            <div class="project-links">
-                                <a href="https://github.com/Baro1502/Denoising-RPCA/blob/main/MIS.pdf" target="_blank">Slides</a>
-                                <a href="https://github.com/Baro1502/Denoising-RPCA/blob/main/report.pdf" target="_blank">Report</a>
-                                <a href="https://github.com/Baro1502/Denoising-RPCA" target="_blank">Code</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-preview">
-                            <img loading="lazy" data-src="assets/projects/RL.png" alt="Reinforcement Learning">
-                            <h4>Reinforcement Learning</h4>
-                            <p class="project-brief">Derived and Implemented 6 RL algorithms from scratch in Python and simulated with GYM environments</p>
-                            <p class="project-tools">Python, GYM</p>
-                        </div>
-                        <button class="view-details-btn">View Details</button>
-                        <div class="project-details hidden">
-                            <div class="project-info">
-                                <p><strong>Semester:</strong> 3</p>
-                                <p><strong>Team size:</strong> 4</p>
-                                <p><strong>Date:</strong> Jan 2022</p>
-                                <p><strong>Grade:</strong> A+ </p>
-                            </div>
-                            <p class="project-description">
-                                In this comprehensive project, we explored and implemented a range of reinforcement learning algorithms, from classic to cutting-edge:
-                                <ul>
-                                    <li><strong>Q-learning:</strong> Implemented this foundational value-based algorithm, understanding the concept of off-policy learning and the balance between exploration and exploitation.</li>
-                                    <li><strong>SARSA (State-Action-Reward-State-Action):</strong> Developed this on-policy TD control algorithm, comparing its performance with Q-learning in various environments.</li>
-                                    <li><strong>DQN (Deep Q-Network):</strong> Extended Q-learning to deep learning, implementing experience replay and fixed Q-targets to stabilize training in complex environments.</li>
-                                    <li><strong>REINFORCE with baseline:</strong> Implemented this policy gradient method, incorporating a baseline to reduce variance and improve learning stability.</li>
-                                    <li><strong>PPO (Proximal Policy Optimization):</strong> Implemented this state-of-the-art policy optimization algorithm, known for its sample efficiency and reliability.</li>
-                                    <li><strong>DDPG (Deep Deterministic Policy Gradient):</strong> Developed this actor-critic algorithm for continuous action spaces, combining insights from DQN and deterministic policy gradients.</li>
-                                </ul>
-                                For each algorithm, we:
-                                <ul>
-                                    <li>Derived the mathematical foundations and update rules</li>
-                                    <li>Implemented the algorithm from scratch in Python</li>
-                                    <li>Tested and benchmarked performance on various OpenAI Gym environments</li>
-                                    <li>Analyzed learning curves, policy behavior, and algorithm trade-offs</li>
-                                </ul>
-                                This project deepened our understanding of RL fundamentals, policy and value-based methods, and advanced techniques in deep reinforcement learning, providing hands-on experience with algorithms at the forefront of AI research.
-                            </p>
-                            <div class="project-links">
-                                <a href="https://github.com/Baro1502/Reinforcement_learning/blob/main/Team_05_ppt.pptx" target="_blank">Slides</a>
-                                <a href="https://github.com/Baro1502/Reinforcement_learning/blob/main/Team_05_report.pdf" target="_blank">Report</a>
-                                <a href="https://github.com/Baro1502/Reinforcement_learning/tree/main" target="_blank">Code</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-preview">
-                            <img loading="lazy" data-src="assets/projects/nn-beyond.png" alt="Neural Networks and Beyond">
-                            <h4>Neural Networks and Beyond</h4>
-                            <p class="project-brief">Derived Backpropogation and Implemented single and multi-layer neural networks from scratch in Python</p>
-                            <p class="project-tools">Python, NumPy</p>
-                        </div>
-                        <button class="view-details-btn">View Details</button>
-                        <div class="project-details hidden">
-                            <div class="project-info">
-                                <p><strong>Semester:</strong> 1</p>
-                                <p><strong>Team size:</strong> 2</p>
-                                <p><strong>Date:</strong> Dec 2020</p>
-                                <p><strong>Grade:</strong> O</p>
-                            </div>
-                            <p class="project-description">
-                                In this project, we delved deep into the fundamentals of neural networks:
-                                <ul>
-                                    <li>Implemented a single-layer neural network from scratch, understanding the basic building blocks of neural computation.</li>
-                                    <li>Extended the implementation to a multi-layer neural network, exploring the power of deep architectures.</li>
-                                    <li>Derived and implemented the backpropagation algorithm for both single and multi-layer networks, gaining insights into gradient-based learning.</li>
-                                    <li>Introduced the concept of implicit layers, exploring advanced neural network architectures beyond traditional explicit layers.</li>
-                                </ul>
-                                This project provided a strong foundation in neural network theory and implementation, paving the way for understanding more complex deep learning models.
-                            </p>
-                            <div class="project-links">
-                                <a href="https://slides.com/incredebleus/deck-8a55f1/fullscreen" target="_blank">Slides</a>
+                                <a href="https://play.google.com/store/apps/details?id=com.doctornetwork.doctorassitant&hl=en&pli=1" target="_blank">Android App</a>
+                                <a href="https://apps.apple.com/vn/app/doctor-assistant/id6477260207?l=vi" target="_blank">IOS App</a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div> -->
+            </div>
     
             </div>
 
