@@ -196,3 +196,22 @@
         margin: 2% auto;
     }
 }
+
+.metrics-table {
+  width: 100%;
+  max-width: 400px;
+  border-collapse: collapse;
+  margin-top: 1em;
+  font-size: 16px;
+}
+
+.metrics-table th,
+.metrics-table td {
+  padding: 10px 16px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.metrics-table th {
+  background-color: #f5f5f5;
+}
