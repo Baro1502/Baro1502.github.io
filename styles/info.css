@@ -40,7 +40,6 @@
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     transition: opacity 0.05s ease-in-out;
 }
@@ -57,7 +56,7 @@
 }
 
 #dico {
-    margin: 20px 0;
+    margin-top: 20px 0;
 }
 
 #dico a, #dico img {
@@ -113,6 +112,7 @@
     text-decoration: none;
     font-weight: 600;
     margin-top: 20px;
+    margin-bottom: 20px;
     transition: all 0.3s ease;
 }
 
